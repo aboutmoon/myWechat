@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::namespace('Api')->any('/api/wechat/serve', 'WechatController@serve')->name('serve');
+Route::namespace('Api')->any('/wechat/serve', 'WechatController@serve')->name('serve');
