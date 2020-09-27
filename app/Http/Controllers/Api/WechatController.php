@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use EasyWeChat\Kernel\Messages\Text;
 use Illuminate\Support\Facades\Log;
 
 class WechatController extends Controller
@@ -19,7 +20,7 @@ class WechatController extends Controller
                     return '收到事件消息';
                     break;
                 case 'text':
-                    return '收到文字消息';
+                    return new Text('你好');
                     break;
                 case 'image':
                     return '收到图片消息';
